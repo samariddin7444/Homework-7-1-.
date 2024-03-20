@@ -1,0 +1,46 @@
+.sec1{
+    width: 80%;
+    height: 900px;
+    margin: 0 auto;
+}
+.col{
+    display: flex;
+    flex-wrap: wrap;
+}
+.card1{
+    width: 23.5%;
+    height: auto;
+    margin-left: 1.2%;
+    margin-top: 25px;
+    overflow: hidden;
+    box-sizing: border-box;
+    transition: 0.4s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+}
+.text{
+    opacity: 0;
+    transition: 1s ease-in-out;
+    margin-top: 25px;
+}
+img{
+    width: 285px;
+    height:auto;
+    transition: 1s ease-in-out;
+
+}
+.card1:hover{
+    box-shadow: 5px 1px 28px 40px rgba(34, 60, 80, 0.2);
+    transform: scale(1.05);
+}
+.card1:hover .text{
+    display: block!important;
+    transition: 1s ease-in;
+    transform: translateY(0);
+    opacity: 1;
+}
+.card1:hover img{
+    transform: scale(1.07);
+    transition: 1s ease-in-out;
+}

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Salb Yurishlari</title>
+    <link rel="stylesheet" href="{% static 'STYLE/style.css' %}">
+</head>
+<body>
+<section class="sec1">
+    <div class="col">
+    {% for foo in yurishlar %}
+        <div class="card1">
+            <img src="{% static 'image' %} {{ foo.image }}">
+            <div class="text">
+                <a href="{% url 'index2' foo.id %}"><h3>{{ foo.nomi }}</h3></a>
+            </div>
+        </div>
+
+    {% endfor %}
+
+    </div>
+</section>
+</body>
+</html>
